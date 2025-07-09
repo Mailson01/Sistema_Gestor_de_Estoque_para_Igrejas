@@ -1,0 +1,200 @@
+/*-------------------------CADASTRO DE EMPRESTIMOS---------------------------------*/
+  /* Estilos Globais */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    margin-top: 50px; /* Adiciona o espaço desejado no topo */
+    font-size: 14px; /* Ajuste do tamanho da fonte */
+}
+h1 {
+    font-size: 2.3em;
+    margin-bottom: 10px auto;
+    color: #1e3d59;
+    text-align: center;
+    /* Remover: display: grid; */
+}
+
+/* Estilo para a imagem na parte superior */
+.header-img {
+    width: 20%;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+}
+
+/* Container do formulário */
+.form-container {
+    display: flex;
+    justify-content: center;
+    padding: 2px;
+}
+
+form {
+    background-color: #c5c0c0;
+    padding: 70px;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+/* Estilo dos labels */
+label {
+    font-size: 14px;
+    margin-bottom: 8px;
+    color: #000000;
+    
+   
+}
+
+/* Estilo dos campos de entrada */
+select, input[type="number"], button {
+    width: 90%;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #000000;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: bolder;
+}
+
+/* Estilo para os botões */
+button {
+    width: 30%;
+    background-color: #1e3d59;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    border: none;
+    padding: 6px;
+    margin-top: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Mensagens de Sucesso e Erro */
+.alert, .success {
+    font-weight: bold;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+.alert {
+    color: red;
+    background-color: #fdd;
+}
+
+.success {
+    color: green;
+    background-color: #dfd;
+}
+.botoes {
+    display: flex;
+    gap: 10px; /* espaço entre os botões */
+    justify-content: center; /* opcional: centraliza os botões */
+    margin-top: 20px; /* espaço acima, se quiser */
+}
+
+/* Estilo para os produtos */
+.produto-item {
+    padding: 10px;
+    background-color: #c5c0c0;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border: 1px solid #c5c0c0;
+}
+/* Estilo para os produtos */
+.quant{
+    width: 15%;
+    padding: 10px;
+    background-color: #f9f9f9;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+/* Estilo para os campos de produtos */
+.produto-item label {
+    font-size: 16px;
+}
+
+/* Botão de Adicionar Produto */
+#addProduto {
+    background-color: #1e3d59;
+    color: white;
+    font-size: 14px;
+    padding: 5px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+}
+
+#addProduto:hover {
+    background-color: blue;
+}
+
+/* Botão de Voltar */
+#voltar {
+    background-color: #1e3d59;
+    color: white;
+    font-size: 14px;
+    border: 1px solid #bbb;
+    padding: 8px;
+    cursor: pointer;
+    width: 40%;
+    margin-top: 10px;
+    text-align: center;
+    align-items:center ;
+    width: 30%;
+    border: none;
+    padding: 6px;
+    margin-top: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#voltar:hover {
+    background-color: red;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    /* Ajustes para dispositivos móveis */
+    body {
+        font-size: 12px;
+    }
+
+    .form-container {
+        padding: 10px;
+    }
+
+    form {
+        padding: 10px;
+        max-width: 100%;
+    }
+
+    .header-img {
+        width: 50%; /* Aumenta a imagem em telas menores */
+    }
+
+    h1 {
+        font-size: 16px;
+    }
+
+    label, select, input[type="number"], button {
+        font-size: 12px; /* Ajuste da fonte para telas menores */
+    }
+
+    #addProduto, #voltar {
+        font-size: 12px;
+        padding: 6px;
+    }
+}

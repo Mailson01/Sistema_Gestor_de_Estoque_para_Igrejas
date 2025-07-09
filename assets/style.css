@@ -1,0 +1,166 @@
+
+
+/*------------------------TELA INICIAL--------------------------------*/
+
+* {
+    margin: 0 ;
+    padding: 0 ;
+    box-sizing:border-box;
+
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    background: #f1f4f8;
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.navbar {
+    background-color: #1e3d59;
+    color: #fff;
+    padding: 0.1px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    box-shadow: 0 4px 10px rgba(233, 3, 3, 0.15);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+
+.navbar .logo {
+    font-size: 2.6em;
+    font-weight: bold;
+   
+}
+
+.navbar .user-info {
+    display: flex;
+    align-items: center;
+    gap: 90px;
+}
+
+.navbar .user-info span {
+    font-size: 1.55em;
+}
+
+.navbar .user-info form {
+    display:inline;
+}
+
+.navbar button {
+    background:#1e3d59;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 20px; /* fonte bem menor */
+    padding: 20px 10px; /* bem compacto */
+    height: 10px; /* altura menor */
+    line-height: 5px; /* ajusta a linha do texto */
+    display: inline-flex;
+    align-items:center;
+    gap: 40px;
+    font-weight:900;
+}
+.navbar button:focus {
+    outline: none;
+}
+
+
+
+/* Container principal */
+.container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em 10px 10px; /* Top 80px para compensar a altura da navbar */
+}
+
+
+.content {
+    background: #c5c0c0;
+    padding: 80px;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 1000px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+    text-align: center;
+}
+
+.logo-img {
+    max-width: 500px;
+    margin-bottom: 40px;
+ 
+}
+
+.title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.0em;
+    color:  #2f3e46;
+    margin-bottom: 40px;
+}
+
+.grid-buttons {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+button.action {
+    background-color: #2f3e46;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1em;
+    font-weight: 600;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+button.action:hover {
+    background-color: #1e3d59;
+    transform: translateY(-2px);
+}
+
+@media (max-width: 600px) {
+    .title {
+        font-size: 1.4em;
+    }
+
+    .navbar .logo {
+        font-size: 1.5em;
+    }
+
+    .navbar .user-info {
+        gap: 20px; /* reduz o espaço entre nome e botão */
+    }
+
+    .navbar button {
+        font-size: 16px;
+        padding: 8px 8px;
+        gap: 8px;
+    }
+
+    .logo-img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .grid-buttons {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/*--------------------------editar CLIENTES--------------------------*/

@@ -1,0 +1,126 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    color: #1e3d59;
+    text-align: center;
+    margin-bottom: 20px;
+    text-decoration-line: none
+}
+.logo {
+    display: block;
+    margin: 0 auto 20px; /* Centraliza a imagem e adiciona espaçamento inferior */
+    max-width: 30%; /* Garante que a imagem não ultrapasse a largura da tela */
+    height: auto; /* Ajuste automático da altura */
+}
+.container {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #c5c0c0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.back-btn {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #1e3d59;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-bottom: 5px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.back-btn:hover {
+    background-color: #2980b9;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-container label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #1e3d59;
+    
+}
+
+.form-container input {
+    padding: 5px;
+    font-size: 13px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 80%;
+}
+
+.form-container button {
+    padding: 12px;
+    font-size: 14px;
+    background-color: #1e3d59;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.form-container button:hover {
+    background-color: #2980b9;
+}
+
+.form-container img {
+    max-width: 100px;
+    height: auto;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .container {
+        max-width: 100%;
+        padding: 15px;
+    }
+
+    .back-btn {
+        font-size: 12px;
+        padding: 8px 5px;
+    }
+
+    .form-container button {
+        font-size: 12px;
+        padding: 10px;
+    }
+
+    .form-container input {
+        font-size: 13px;
+        padding: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .back-btn {
+        display: block;
+        text-align: center;
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .form-container img {
+        max-width: 70px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+}

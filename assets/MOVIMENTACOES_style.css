@@ -1,0 +1,164 @@
+   /* Estilos gerais */
+   body {
+    font-family: Arial, sans-serif;
+    margin: 5;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 90%;
+    height: 50%;
+    background-color: #d1d6da;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 0px;
+}
+
+table th, table td {
+    padding: 5px;
+    border: 1px solid #000000;
+    text-align: center;
+}
+
+.input-quantidade {
+    width: 80px;
+}
+
+.btn {
+    padding: 8px 15px;
+    cursor: pointer;
+    background-color: #1e3d59;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    text-decoration: none;
+
+}
+
+.btn:hover {
+    background-color:green;
+}
+
+.cliente-info {
+    font-weight: bolder;
+    font-size: 1.2em;
+    color: black;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.imprimir-btn {
+    background-color: #1e3d59;
+    color: white;
+    border: none;
+    padding: 5px 15px;
+    cursor: pointer;
+    margin-left: 10px;
+    border-radius: 10px;
+    
+}
+
+.imprimir-btn:hover {
+    background-color:green;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2em;
+    color: #1e3d59;
+    margin-top: 10px;
+    text-decoration-line: none;
+}
+.logo {
+    display: block;
+    margin: 0 auto 20px; /* Centraliza a imagem e adiciona espaçamento inferior */
+    max-width: 35%; /* Garante que a imagem não ultrapasse a largura da tela */
+    height: auto; /* Ajuste automático da altura */
+   
+}
+
+.search-form {
+    text-align: center;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.search-form input[type="text"] {
+    padding: 5px;
+    width: 80%;
+    max-width: 300px;
+    font-size: 1em;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.navigation-buttons {
+    text-align: center;
+    margin-top: 20px;
+    text-decoration: none;
+}
+
+.navigation-buttons .btn {
+    margin: 0 10px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    table th, table td {
+        font-size: 0.9em;
+        padding: 8px;
+    }
+
+    .btn, .imprimir-btn {
+        padding: 8px 10px;
+        font-size: 0.9em;
+    }
+
+    .input-quantidade {
+        width: 50px;
+        font-size: 0.9em;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    .cliente-info {
+        font-size: 1em;
+    }
+
+    .search-form input[type="text"] {
+        width: 90%;
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 480px) {
+    table {
+        font-size: 0.8em;
+    }
+
+    .btn, .imprimir-btn {
+        font-size: 0.8em;
+        padding: 5px 8px;
+    }
+
+    .input-quantidade {
+        font-size: 0.8em;
+    }
+
+    h1 {
+        font-size: 1.2em;
+    }
+
+    .cliente-info {
+        font-size: 0.9em;
+    }
+}

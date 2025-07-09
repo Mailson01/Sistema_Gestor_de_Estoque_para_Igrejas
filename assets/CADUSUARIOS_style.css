@@ -1,0 +1,193 @@
+/*-----------------------CADASTRO DE USUÁRIO-------------------------------*/
+  /* Reset básico */
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilo do corpo */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #dfe6e9;
+}
+
+/* Contêiner do formulário */
+.form-container {
+    background-color: #c5c0c0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 90%;
+    text-align: center;
+}
+.nivel-ass{
+    display: flex;
+    background-color: #edeaea;
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    font-weight: bolder;
+    
+}
+.nivel-ass2{
+    display: flex;
+    background-color: #edeaea;
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    left: 20%;
+}
+
+/* Título */
+h2 {
+    color: #1e1f59;
+    margin-bottom: 15px;
+    font-size: 1.8em;
+}
+.logo {
+    display: block;
+    margin: 0 auto 20px; /* Centraliza a imagem e adiciona espaçamento inferior */
+    max-width: 50%; /* Garante que a imagem não ultrapasse a largura da tela */
+    height: auto; /* Ajuste automático da altura */
+   
+}
+
+/* Estilo da mensagem */
+.message {
+    display: none; /* Oculta a mensagem por padrão */
+    color: #d63031;
+    margin-bottom: 15px;
+    font-size: 0.9em;
+}
+
+/* Estilo das labels */
+label {
+    display: block;
+    color: rgb(0, 0, 0);
+    font-size: 1em;
+    margin-bottom: 5px;
+    text-align: left;
+    font-weight: bolder;
+    
+}
+
+/* Campos de entrada */
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #050505;
+    border-radius: 5px;
+    outline: none;
+    font-size: 1em;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus, input[type="password"]:focus {
+    border-color: #0984e3;
+}
+
+/* Botão de envio */
+button {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    font-weight: bold;
+    color: #ffffff;
+    background-color:#1e3d59;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-bottom: 10px;
+}
+
+button:hover {
+    background-color:green;
+}
+
+/* Botão de voltar */
+.back-button {
+    display: inline-block;
+    padding: 10px;
+    font-size: 1em;
+    font-weight: bold;
+    color: #ffffff;
+    background-color:#1e3d59;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    width: 100%;
+}
+
+.back-button:hover {
+    background-color: #c0392b;
+}
+
+/* Media Queries para Responsividade */
+
+/* Para telas pequenas (celulares) */
+@media (max-width: 600px) {
+    .form-container {
+        padding: 15px;
+        max-width: 100%;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    input[type="text"], input[type="password"], button {
+        font-size: 0.9em;
+        padding: 8px;
+    }
+}
+
+/* Para tablets (largura entre 601px e 1024px) */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .form-container {
+        padding: 18px;
+        max-width: 80%;
+    }
+
+    h2 {
+        font-size: 1.6em;
+    }
+
+    input[type="text"], input[type="password"], button {
+        font-size: 1em;
+        padding: 9px;
+    }
+}
+
+/* Para telas grandes (desktop) */
+@media (min-width: 1025px) {
+    .form-container {
+        padding: 20px;
+        max-width: 400px;
+    }
+
+    h2 {
+        font-size: 1.8em;
+    }
+
+    input[type="text"], input[type="password"], button {
+        font-size: 1em;
+        padding: 10px;
+    }
+}

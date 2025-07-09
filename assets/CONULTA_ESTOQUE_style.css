@@ -1,0 +1,216 @@
+* Estilo global */
+    body {
+        font-family: Arial, sans-serif;
+        background: #f8f8f8;
+        margin: 0;
+        padding: 30px;
+    }
+
+    h1 {
+        color: #1e1f59;
+        text-align: center;
+        margin-bottom: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .logo {
+            display: block;
+            margin: 0 auto 20px; /* Centraliza a logo e adiciona espaçamento inferior */
+            max-width: 20%; /* Faz com que a logo se ajuste ao tamanho da tela */
+            height: auto; /* Mantém a proporção da logo */
+        }
+    .container {
+        max-width: 1000px;
+        margin: auto;
+        padding: 10px;
+        background: #c5c0c0;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .search-form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+        flex-wrap: wrap;
+    }
+
+    .search-form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    
+    .search-form input[type="text"] {
+        padding: 6px;
+        font-size: 12px;
+        border: 1px solid #021958;
+        border-right: none; /* Remove a borda da direita para unir com o botão */
+        border-radius: 4px 0 0 4px; /* Arredonda só à esquerda */
+        width: 300px;
+        height: 20px;
+    }
+    
+    .search-form button {
+        padding: 6px;
+        font-size: 14px;
+        background: #1e3d59;
+        color: white;
+        border: 1px solid #ddd;
+        border-left: none; /* Remove a borda da esquerda para unir com o input */
+        border-radius: 0 4px 4px 0; /* Arredonda só à direita */
+        height: 35.5px;
+        width: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+    
+    .search-form button:hover {
+        background: #2980b9;
+    }
+
+
+    .product-table {
+        width: 100%;
+        border-collapse: collapse;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .product-table th,
+    .product-table td {
+        padding: 8px;
+        text-align: center;
+        border-bottom: 1px solid #ddd;
+        font-size: 12px;
+    }
+
+    .product-table th {
+        background: #1e3d59;
+        color: white;
+    }
+
+    .product-table tr:hover {
+        background: #f4f4f4;
+    }
+
+    .product-table td img {
+        max-width: 40px;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: transform 0.3s;
+    }
+
+    .product-table td img:hover {
+        transform: scale(2);
+    }
+/* Centralizar os botões */
+.button-container {
+    display: flex; /* Define um layout flexível */
+    justify-content: center; /* Centraliza os botões horizontalmente */
+    gap: 20px; /* Espaço entre os botões */
+    margin-top: 20px; /* Espaço acima dos botões */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Estilo individual dos botões */
+.btn {
+    padding: 10px 20px; /* Ajusta o tamanho dos botões */
+    font-size: 14px; /* Aumenta o tamanho da fonte */
+    background-color: #1e3d59;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: green; /* Cor do botão ao passar o mouse */
+}
+
+
+    /* Botões na tabela para Editar e Excluir */
+    .btn-action {
+        padding: 4px 8px;
+        font-size: 15px;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        text-decoration: none;
+    }
+
+    .btn-action.edit {
+        background-color: rgb(173, 122, 27);
+        font-weight: bolder;
+        margin-right: 10px;
+    }
+
+    .btn-action.delete {
+        background-color: red;
+        font-weight: bolder;
+    }
+
+    .btn-action:hover {
+        opacity: 0.8;
+    }
+
+    /* Responsividade */
+    @media (max-width: 768px) {
+        .container {
+            padding: 10px;
+        }
+
+        h1 {
+            font-size: 20px;
+        }
+        .logo {
+            display: block;
+            margin: 0 auto 20px; /* Centraliza a imagem e adiciona espaçamento inferior */
+            max-width: 60%; /* Garante que a imagem não ultrapasse a largura da tela */
+            height: auto; /* Ajuste automático da altura */
+        }
+
+        .search-form input[type="text"] {
+            width: 100%;
+            max-width: none;
+        }
+
+        .product-table th,
+        .product-table td {
+            font-size: 11px;
+            padding: 6px;
+        }
+
+        .btn {
+            font-size: 10px;
+            padding: 4px 8px;
+            
+        }
+
+        .btn-action {
+            font-size: 8px;
+            padding: 3px 6px;
+            
+        }
+    }
+
+    @media (max-width: 480px) {
+        .product-table td img {
+            max-width: 30px;
+        }
+
+        .search-form {
+            flex-direction: column;
+        }
+
+        .search-form button {
+            width: 100%;
+            max-width: 100px;
+        }
+    }
+
