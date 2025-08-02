@@ -1,4 +1,4 @@
-# Sistema Festor de Estoque voltado para - Igreja
+# Sistema Gestor de Estoque  - Igreja
 
 Este é um sistema web desenvolvido em PHP para controle de empréstimos de produtos dentro de uma igreja.
 
